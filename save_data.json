@@ -71,11 +71,7 @@
                     "m1 liscnece\r"
                 ]
             ]
-        },
-        "TEST": {
-            "password": "ABC",
-            "balance": 0.0,
-            "history": []
+        }
         }
     }
 }
