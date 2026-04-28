@@ -26,8 +26,15 @@
         },
         "Ryan": {
             "password": "hellofriendhan",
-            "balance": 0.0,
-            "history": []
+            "balance": 3333.0,
+            "history": [
+                [
+                    "deposit",
+                    3333.0,
+                    "Apr 28",
+                    "crack"
+                ]
+            ]
         }
     }
 }
