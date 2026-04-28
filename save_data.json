@@ -1,7 +1,7 @@
 {
     "users": {
-        "Edison": {
-            "password": "12345",
+        "edison": {
+            "password": "abc",
             "balance": 449.53999999999996,
             "history": [
                 [
