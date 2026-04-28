@@ -44,13 +44,19 @@
         },
         "xio": {
             "password": "xioedi",
-            "balance": 500.0,
+            "balance": 475.0,
             "history": [
                 [
                     "deposit",
                     500.0,
                     "Apr 28",
                     "job"
+                ],
+                [
+                    "withdraw",
+                    25.0,
+                    "Apr 28",
+                    "toys"
                 ]
             ]
         }
