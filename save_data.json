@@ -2,8 +2,15 @@
     "users": {
         "test": {
             "password": "ABC",
-            "balance": 0.0,
-            "history": []
+            "balance": 1000.0,
+            "history": [
+                [
+                    "deposit",
+                    1000.0,
+                    "Apr 28",
+                    "paycheck"
+                ]
+            ]
         }
     }
 }
