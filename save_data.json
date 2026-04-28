@@ -2,7 +2,7 @@
     "users": {
         "test": {
             "password": "ABC",
-            "balance": 936.38,
+            "balance": 924.38,
             "history": [
                 [
                     "deposit",
@@ -21,6 +21,12 @@
                     37.89,
                     "Apr 28",
                     "uber"
+                ],
+                [
+                    "withdraw",
+                    12.0,
+                    "Apr 28",
+                    "snack"
                 ]
             ]
         }
