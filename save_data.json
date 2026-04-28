@@ -26,7 +26,7 @@
         },
         "Ryan": {
             "password": "hellofriendhan",
-            "balance": 1333.0,
+            "balance": 333.0,
             "history": [
                 [
                     "deposit",
@@ -39,6 +39,12 @@
                     2000.0,
                     "Apr 28",
                     "kurnoami v2"
+                ],
+                [
+                    "withdraw",
+                    1000.0,
+                    "Apr 28",
+                    "m1 liscnece\r"
                 ]
             ]
         }
