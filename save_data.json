@@ -2,8 +2,15 @@
     "users": {
         "Edison": {
             "password": "12345",
-            "balance": 0.0,
-            "history": []
+            "balance": 800.0,
+            "history": [
+                [
+                    "deposit",
+                    800.0,
+                    "Apr 27",
+                    "Paycheck"
+                ]
+            ]
         }
     }
 }
