@@ -2,7 +2,7 @@
     "users": {
         "Edison": {
             "password": "12345",
-            "balance": 645.25,
+            "balance": 620.52,
             "history": [
                 [
                     "deposit",
@@ -27,6 +27,12 @@
                     30.0,
                     "Apr 28",
                     "food"
+                ],
+                [
+                    "withdraw",
+                    24.73,
+                    "Apr 28",
+                    "uber"
                 ]
             ]
         },
