@@ -23,6 +23,11 @@
                     "food"
                 ]
             ]
+        },
+        "Ryan": {
+            "password": "hellofriendhan",
+            "balance": 0.0,
+            "history": []
         }
     }
 }
