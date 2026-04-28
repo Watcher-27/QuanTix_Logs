@@ -1,3 +1,9 @@
 {
-  "users": {}
+    "users": {
+        "Edison": {
+            "password": "12345",
+            "balance": 0.0,
+            "history": []
+        }
+    }
 }
