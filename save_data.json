@@ -41,6 +41,11 @@
                     "scratch ticket"
                 ]
             ]
+        },
+        "xio": {
+            "password": "xioedi",
+            "balance": 0.0,
+            "history": []
         }
     }
 }
