@@ -74,13 +74,19 @@
         },
         "AGould": {
             "password": "1234",
-            "balance": 1000000.0,
+            "balance": 990000.0,
             "history": [
                 [
                     "deposit",
                     1000000.0,
                     "Apr 29",
                     "lottery"
+                ],
+                [
+                    "withdraw",
+                    10000.0,
+                    "Apr 29",
+                    "buy drugs"
                 ]
             ]
         }
