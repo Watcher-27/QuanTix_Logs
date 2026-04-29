@@ -2,7 +2,7 @@
     "users": {
         "123": {
             "password": "123",
-            "balance": 746.02,
+            "balance": 691.68,
             "history": [
                 [
                     "deposit",
@@ -63,6 +63,12 @@
                     167.23,
                     "Apr 29",
                     "gas"
+                ],
+                [
+                    "withdraw",
+                    54.34,
+                    "Apr 29",
+                    "gift"
                 ]
             ]
         },
