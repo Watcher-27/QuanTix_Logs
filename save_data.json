@@ -2,7 +2,7 @@
     "users": {
         "123": {
             "password": "123",
-            "balance": 895.56,
+            "balance": 945.56,
             "history": [
                 [
                     "deposit",
@@ -39,6 +39,12 @@
                     5.0,
                     "Apr 28",
                     "scratch ticket"
+                ],
+                [
+                    "deposit",
+                    50.0,
+                    "Apr 29",
+                    "friend"
                 ]
             ]
         },
