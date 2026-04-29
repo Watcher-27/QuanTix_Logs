@@ -71,6 +71,11 @@
                     "food"
                 ]
             ]
+        },
+        "AGould": {
+            "password": "1234",
+            "balance": 0.0,
+            "history": []
         }
     }
 }
