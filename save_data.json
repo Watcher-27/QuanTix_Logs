@@ -2,7 +2,7 @@
     "users": {
         "123": {
             "password": "123",
-            "balance": 667.25,
+            "balance": 639.31,
             "history": [
                 [
                     "deposit",
@@ -75,6 +75,12 @@
                     24.43,
                     "Apr 29",
                     "uber eats"
+                ],
+                [
+                    "withdraw",
+                    27.94,
+                    "Apr 29",
+                    "valorant skin"
                 ]
             ]
         },
