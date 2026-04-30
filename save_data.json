@@ -143,6 +143,11 @@
                     "food"
                 ]
             ]
+        },
+        "asdf": {
+            "password": "asdffdsa",
+            "balance": 0.0,
+            "history": []
         }
     }
 }
