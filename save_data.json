@@ -1,87 +1,9 @@
 {
     "users": {
-        "123": {
-            "password": "123",
-            "balance": 639.31,
-            "history": [
-                [
-                    "deposit",
-                    1000.0,
-                    "Apr 28",
-                    "paycheck"
-                ],
-                [
-                    "withdraw",
-                    25.73,
-                    "Apr 28",
-                    "food"
-                ],
-                [
-                    "withdraw",
-                    37.89,
-                    "Apr 28",
-                    "uber"
-                ],
-                [
-                    "withdraw",
-                    12.0,
-                    "Apr 28",
-                    "snack"
-                ],
-                [
-                    "withdraw",
-                    23.82,
-                    "Apr 28",
-                    "gym membership"
-                ],
-                [
-                    "withdraw",
-                    5.0,
-                    "Apr 28",
-                    "scratch ticket"
-                ],
-                [
-                    "deposit",
-                    50.0,
-                    "Apr 29",
-                    "friend"
-                ],
-                [
-                    "withdraw",
-                    20.31,
-                    "Apr 29",
-                    "food"
-                ],
-                [
-                    "withdraw",
-                    12.0,
-                    "Apr 29",
-                    "snack"
-                ],
-                [
-                    "withdraw",
-                    167.23,
-                    "Apr 29",
-                    "gas"
-                ],
-                [
-                    "withdraw",
-                    54.34,
-                    "Apr 29",
-                    "gift"
-                ],
-                [
-                    "withdraw",
-                    24.43,
-                    "Apr 29",
-                    "uber eats"
-                ],
-                [
-                    "withdraw",
-                    27.94,
-                    "Apr 29",
-                    "valorant skin"
-                ]
+        "xio": {
+            "password": "xioedi",
+            "balance": 0.0,
+            "history": []
         }
     }
 }
