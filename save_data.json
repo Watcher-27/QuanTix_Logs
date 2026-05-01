@@ -2,7 +2,7 @@
     "users": {
         "xio": {
             "password": "xioedi",
-            "balance": 770.65,
+            "balance": 759.36,
             "history": [
                 [
                     "deposit",
@@ -21,6 +21,12 @@
                     40.0,
                     "Apr 30",
                     "cloths"
+                ],
+                [
+                    "withdraw",
+                    11.29,
+                    "Apr 30",
+                    "amazon prime"
                 ]
             ]
         }
