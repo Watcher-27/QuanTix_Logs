@@ -148,6 +148,11 @@
             "password": "asdffdsa",
             "balance": 0.0,
             "history": []
+        },
+        "edison": {
+            "password": "1234",
+            "balance": 0.0,
+            "history": []
         }
     }
 }
