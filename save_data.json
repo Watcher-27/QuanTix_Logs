@@ -38,7 +38,7 @@
         },
         "123": {
             "password": "123",
-            "balance": 942.0,
+            "balance": 929.0,
             "history": [
                 [
                     "deposit",
@@ -51,6 +51,12 @@
                     150.0,
                     "Apr 30",
                     "investment"
+                ],
+                [
+                    "withdraw",
+                    13.0,
+                    "Apr 30",
+                    "food"
                 ]
             ]
         }
