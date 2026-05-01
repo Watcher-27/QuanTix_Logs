@@ -2,8 +2,15 @@
     "users": {
         "xio": {
             "password": "xioedi",
-            "balance": 0.0,
-            "history": []
+            "balance": 822.65,
+            "history": [
+                [
+                    "deposit",
+                    822.65,
+                    "Apr 30",
+                    "paycheck"
+                ]
+            ]
         }
     }
 }
