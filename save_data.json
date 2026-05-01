@@ -38,7 +38,7 @@
         },
         "123": {
             "password": "123",
-            "balance": 903.57,
+            "balance": 879.6400000000001,
             "history": [
                 [
                     "deposit",
@@ -63,6 +63,12 @@
                     25.43,
                     "Apr 30",
                     "valorant skin"
+                ],
+                [
+                    "withdraw",
+                    23.93,
+                    "Apr 30",
+                    "dinner"
                 ]
             ]
         }
