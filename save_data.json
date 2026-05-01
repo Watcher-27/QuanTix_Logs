@@ -35,6 +35,11 @@
                     "e transfer"
                 ]
             ]
+        },
+        "123": {
+            "password": "123",
+            "balance": 0.0,
+            "history": []
         }
     }
 }
