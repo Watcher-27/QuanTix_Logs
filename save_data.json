@@ -151,8 +151,15 @@
         },
         "edison": {
             "password": "1234",
-            "balance": 0.0,
-            "history": []
+            "balance": 1007.04,
+            "history": [
+                [
+                    "deposit",
+                    1007.04,
+                    "Apr 30",
+                    "paycheck"
+                ]
+            ]
         }
     }
 }
