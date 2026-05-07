@@ -86,7 +86,7 @@
         },
         "pesp": {
             "password": "1234",
-            "balance": 600.0,
+            "balance": 4600.0,
             "history": [
                 [
                     "deposit",
@@ -99,6 +99,12 @@
                     400.0,
                     "May 07",
                     "food"
+                ],
+                [
+                    "deposit",
+                    4000.0,
+                    "May 07",
+                    "income"
                 ]
             ]
         }
