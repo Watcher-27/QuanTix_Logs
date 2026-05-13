@@ -38,7 +38,7 @@
         },
         "123": {
             "password": "123",
-            "balance": 477.58000000000027,
+            "balance": 977.5800000000003,
             "history": [
                 [
                     "deposit",
@@ -147,6 +147,12 @@
                     1.13,
                     "May 13",
                     "ring pop"
+                ],
+                [
+                    "deposit",
+                    500.0,
+                    "May 13",
+                    "from mom"
                 ]
             ]
         },
