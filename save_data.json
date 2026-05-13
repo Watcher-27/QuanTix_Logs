@@ -38,7 +38,7 @@
         },
         "123": {
             "password": "123",
-            "balance": 614.9600000000003,
+            "balance": 561.5300000000003,
             "history": [
                 [
                     "deposit",
@@ -111,6 +111,12 @@
                     829.98,
                     "May 13",
                     "prom  suit"
+                ],
+                [
+                    "withdraw",
+                    53.43,
+                    "May 13",
+                    "dinner"
                 ]
             ]
         },
