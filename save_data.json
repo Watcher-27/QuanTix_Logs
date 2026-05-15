@@ -3,7 +3,7 @@
         "123@123.com": {
             "first_name": "Edison",
             "last_name": "Wang",
-            "email": "123",
+            "email": "123@.",
             "password": "123",
             "balance": 778.3600000000001,
             "history": [
