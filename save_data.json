@@ -6,7 +6,38 @@
             "email": "123@123.com",
             "password": "123",
             "balance": 0.0,
-            "history": []
+            "history": [
+                [
+                    "deposit",
+                    822.65,
+                    "Apr 30",
+                    "paycheck"
+                ],
+                [
+                    "withdraw",
+                    12.0,
+                    "Apr 30",
+                    "food"
+                ],
+                [
+                    "withdraw",
+                    40.0,
+                    "Apr 30",
+                    "cloths"
+                ],
+                [
+                    "withdraw",
+                    11.29,
+                    "Apr 30",
+                    "amazon prime"
+                ],
+                [
+                    "deposit",
+                    19.0,
+                    "Apr 30",
+                    "e transfer"
+                ]
+            ]
         }
     }
 }
