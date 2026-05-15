@@ -5,7 +5,7 @@
             "last_name": "Wang",
             "email": "123@123.com",
             "password": "123",
-            "balance": 1178.3600000000001,
+            "balance": 1278.3600000000001,
             "history": [
                 [
                     "deposit",
@@ -36,6 +36,12 @@
                     19.0,
                     "Apr 30",
                     "e transfer"
+                ],
+                [
+                    "deposit",
+                    100.0,
+                    "May 15",
+                    "fraud"
                 ],
                 [
                     "deposit",
