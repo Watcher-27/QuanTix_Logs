@@ -3,9 +3,9 @@
         "123@123.com": {
             "first_name": "Edison",
             "last_name": "Wang",
-            "email": "123@123.com",
+            "email": "123",
             "password": "123",
-            "balance": 878.3600000000001,
+            "balance": 778.3600000000001,
             "history": [
                 [
                     "deposit",
@@ -36,12 +36,6 @@
                     19.0,
                     "Apr 30",
                     "e transfer"
-                ],
-                [
-                    "deposit",
-                    100.0,
-                    "May 15",
-                    "rob bank"
                 ]
             ]
         },
