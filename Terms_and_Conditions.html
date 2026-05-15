@@ -1,193 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QuanTix Privacy Policy</title>
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Terms & Conditions — QuanTix</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0f0f12;
-    color: #eaeaea;
-    margin: 0;
-    padding: 0;
-    line-height: 1.75;
-}
+  :root {
+    --bg:       #f5f6f8;
+    --surface:  #ffffff;
+    --card:     #f8f9fb;
+    --border:   #dce1e7;
+    --accent:   #46855f;
+    --accent-h: #5aa06e;
+    --text:     #191c20;
+    --dim:      #5a5f69;
+    --muted:    #8c919b;
+    --red:      #d2504b;
+    --green:    #28aa5f;
+  }
 
-.container {
-    max-width: 980px;
-    margin: 50px auto;
-    padding: 34px;
-    background-color: #1a1a20;
-    border-radius: 14px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.5);
-}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-h1 { color: #ffffff; }
-h2 { color: #d8d8d8; margin-top: 32px; }
+  html { scroll-behavior: smooth; }
 
-p, li { color: #b5b5b5; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.7;
+  }
 
-ul { margin-left: 20px; }
+  /* ── HERO ── */
+  .hero {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 52px 0 44px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
 
-a { color: #4da3ff; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 15% 50%, rgba(70,133,95,.07) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 60% at 85% 50%, rgba(70,133,95,.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
 
-.footer {
-    margin-top: 40px;
-    font-size: 12px;
-    color: #777;
-}
+  .logo-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+    animation: fadeDown .55s ease both;
+  }
+
+  .logo-icon {
+    width: 38px; height: 38px;
+    background: var(--accent);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .logo-icon svg { width: 22px; height: 22px; fill: #fff; }
+
+  .logo-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.55rem;
+    color: var(--accent);
+    letter-spacing: -.5px;
+  }
+
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: var(--text);
+    letter-spacing: -.5px;
+    margin-bottom: 10px;
+    animation: fadeDown .6s .08s ease both;
+  }
+
+  .hero p {
+    font-size: .92rem;
+    color: var(--muted);
+    animation: fadeDown .6s .16s ease both;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 5px 14px;
+    background: rgba(70,133,95,.1);
+    color: var(--accent);
+    border-radius: 20px;
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    animation: fadeDown .6s .24s ease both;
+  }
+
+  /* ── LAYOUT ── */
+  .wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  /* ── TOC ── */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin: 40px 0 36px;
+    animation: fadeUp .5s .1s ease both;
+  }
+
+  .toc h2 {
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+
+  .toc ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 24px;
+    counter-reset: toc;
+  }
+
+  .toc li { counter-increment: toc; }
+
+  .toc a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: .87rem;
+    color: var(--dim);
+    text-decoration: none;
+    transition: color .2s;
+  }
+
+  .toc a::before {
+    content: counter(toc, decimal-leading-zero);
+    font-size: .72rem;
+    font-weight: 600;
+    color: var(--accent);
+    min-width: 22px;
+  }
+
+  .toc a:hover { color: var(--accent); }
+
+  /* ── SECTIONS ── */
+  .section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px 40px;
+    margin-bottom: 20px;
+    animation: fadeUp .5s ease both;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: var(--accent);
+    border-radius: 4px 0 0 4px;
+    opacity: 0;
+    transition: opacity .25s;
+  }
+
+  .section:hover::before { opacity: 1; }
+
+  .section-num {
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+
+  .section h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    color: var(--text);
+    margin-bottom: 16px;
+    letter-spacing: -.3px;
+  }
+
+  .section p {
+    font-size: .9rem;
+    color: var(--dim);
+    margin-bottom: 12px;
+  }
+
+  .section p:last-child { margin-bottom: 0; }
+
+  .section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 12px 0;
+  }
+
+  .section ul li {
+    font-size: .9rem;
+    color: var(--dim);
+    padding-left: 18px;
+    position: relative;
+  }
+
+  .section ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .highlight-box {
+    background: rgba(70,133,95,.07);
+    border: 1px solid rgba(70,133,95,.2);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 14px 0;
+    font-size: .88rem;
+    color: var(--dim);
+  }
+
+  .warning-box {
+    background: rgba(210,80,75,.06);
+    border: 1px solid rgba(210,80,75,.18);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 14px 0;
+    font-size: .88rem;
+    color: var(--dim);
+  }
+
+  .warning-box strong { color: var(--red); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding: 36px 24px;
+  }
+
+  footer p {
+    font-size: .82rem;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  footer a:hover { text-decoration: underline; }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-14px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* stagger sections */
+  .section:nth-child(1)  { animation-delay: .05s; }
+  .section:nth-child(2)  { animation-delay: .10s; }
+  .section:nth-child(3)  { animation-delay: .15s; }
+  .section:nth-child(4)  { animation-delay: .18s; }
+  .section:nth-child(5)  { animation-delay: .21s; }
+  .section:nth-child(6)  { animation-delay: .24s; }
+  .section:nth-child(7)  { animation-delay: .27s; }
+  .section:nth-child(8)  { animation-delay: .30s; }
+  .section:nth-child(9)  { animation-delay: .33s; }
+  .section:nth-child(10) { animation-delay: .36s; }
+  .section:nth-child(11) { animation-delay: .39s; }
+
+  /* ── SCROLL-TO-TOP ── */
+  #top-btn {
+    position: fixed;
+    bottom: 28px; right: 28px;
+    width: 42px; height: 42px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none;
+    transition: opacity .3s, transform .3s, background .2s;
+    box-shadow: 0 4px 16px rgba(70,133,95,.35);
+  }
+
+  #top-btn.visible { opacity: 1; pointer-events: auto; }
+  #top-btn:hover { background: var(--accent-h); transform: translateY(-3px); }
+
+  @media (max-width: 600px) {
+    .section { padding: 26px 22px; }
+    .toc ol { grid-template-columns: 1fr; }
+    .wrapper { padding: 0 16px 60px; }
+  }
 </style>
 </head>
-
 <body>
-<div class="container">
 
-<h1>QuanTix Privacy Policy</h1>
-<p>Last updated: May 14, 2026</p>
-
-<h2>1. Introduction and Scope</h2>
-<p>
-QuanTix is an experimental artificial intelligence-powered financial analytics and educational software application developed and operated in Canada.
-This Privacy Policy explains in detail how we collect, use, process, store, and protect user information when you use the QuanTix application,
-including any associated web services, interfaces, or AI-driven financial tools.
-</p>
-
-<p>
-By using QuanTix, you acknowledge that you understand that the platform is designed for educational and informational purposes only and that
-data processing is required for AI-based analysis and visualization of financial patterns.
-</p>
-
-<h2>2. Nature of the Service</h2>
-<p>
-QuanTix is not a bank, brokerage, investment advisor, trading platform, or financial institution. The application does not execute trades,
-manage investments, or provide regulated financial services. Instead, it functions as a software-based analytical tool that uses artificial intelligence
-to interpret financial behavior and publicly available market data.
-</p>
-
-<p>
-The system may generate insights related to budgeting behavior, spending patterns, or stock market trends, but these outputs are not professional advice
-and should not be interpreted as guarantees of financial performance or predictions of future outcomes.
-</p>
-
-<h2>3. Information We Collect</h2>
-<p>
-QuanTix may collect the following categories of information depending on user interaction:
-</p>
-
-<ul>
-<li><strong>User-provided financial data:</strong> inputs such as budgets, spending categories, investment preferences, or manually entered financial records.</li>
-<li><strong>Account information:</strong> basic profile data such as username or email address if account creation is enabled.</li>
-<li><strong>Usage data:</strong> interactions with the application including feature usage, session activity, and system performance metrics.</li>
-<li><strong>Market data references:</strong> publicly available stock market data retrieved from third-party sources such as Yahoo Finance.</li>
-</ul>
-
-<p>
-We do not intentionally collect sensitive personal identifiers such as government identification numbers, banking credentials, or passwords for external accounts.
-</p>
-
-<h2>4. How We Use Information</h2>
-<p>
-The information collected by QuanTix is used strictly for internal application functionality, including:
-</p>
-
-<ul>
-<li>Generating AI-based financial insights and visualizations</li>
-<li>Analyzing spending behavior and financial patterns</li>
-<li>Displaying stock market trends and summaries</li>
-<li>Improving system performance, stability, and user experience</li>
-</ul>
-
-<p>
-We do not use user data for advertising targeting, behavioral advertising, or commercial resale.
-</p>
-
-<h2>5. Artificial Intelligence Systems and Model Usage</h2>
-<p>
-QuanTix uses artificial intelligence systems, including the <strong>Gemma 4 31B IT</strong> language model, to generate financial analysis and interpret user inputs.
-These models operate based on statistical pattern recognition and do not possess awareness, intent, or financial expertise.
-</p>
-
-<p>
-AI-generated outputs may be incorrect, incomplete, or inconsistent with real-world financial conditions. These outputs are probabilistic in nature
-and are not validated by licensed financial professionals. Users must independently verify all AI-generated conclusions before relying on them.
-</p>
-
-<h2>6. Third-Party Financial Data (Yahoo Finance)</h2>
-<p>
-QuanTix integrates publicly available financial market data from third-party providers, including Yahoo Finance, to retrieve information such as stock prices,
-historical trends, and company-related data.
-</p>
-
-<p>
-We do not control or guarantee the accuracy, timeliness, or completeness of third-party data sources. Market data may be delayed, approximate, or subject to revision.
-Users acknowledge that external data providers may have their own terms, limitations, and availability constraints.
-</p>
-
-<h2>7. Data Sharing and Disclosure</h2>
-<p>
-QuanTix does not sell, rent, or trade personal user data to third parties. We do not share personal financial information with advertisers or marketing networks.
-</p>
-
-<p>
-Data may be processed by internal systems or AI infrastructure strictly for the purpose of generating outputs within the application.
-We do not knowingly disclose personal financial data unless required by law or legal process within applicable jurisdictions in Canada.
-</p>
-<h2>8. Data Storage and Security</h2>
-<p>
-User data is stored using GitHub-based storage systems as part of the application's backend architecture. Access to this data is not directly exposed to users and is only accessible through the QuanTix graphical user interface (GUI) with authentication requirements in place.
-</p>
-
-<p>
-The system requires authorized login credentials (such as a password-protected user session) to access stored data through the application. Direct access to the underlying storage system is restricted and not intended for end-user interaction.
-</p>
-
-<p>
-We implement reasonable administrative and technical safeguards to reduce the risk of unauthorized access, modification, or disclosure of data. However, because no system connected to the internet can be fully secure, we cannot guarantee absolute protection of stored information.
-</p>
-
-<p>
-Users acknowledge that they are responsible for maintaining the confidentiality of their login credentials and that any unauthorized access resulting from credential compromise may affect their account data.
-</p>
-
-<h2>9. User Rights and Data Control</h2>
-<p>
-Users may request access, modification, or deletion of their stored data by contacting support. We will make reasonable efforts to fulfill such requests,
-subject to technical limitations, legal obligations, and system architecture constraints.
-</p>
-
-<h2>10. Canadian Jurisdiction and Compliance</h2>
-<p>
-QuanTix is operated in Canada and is intended for general informational use. The application is not registered with or regulated by any financial authority,
-including the Canadian Securities Administrators (CSA), and does not operate as a licensed financial service provider.
-</p>
-
-<p>
-Users acknowledge that QuanTix is a software tool and not a regulated financial advisory service under Canadian securities law or related financial regulations.
-</p>
-
-<h2>11. Limitations of Liability</h2>
-<p>
-To the maximum extent permitted under applicable law, QuanTix and its developers are not liable for any direct, indirect, incidental, or consequential damages,
-including but not limited to financial losses, investment outcomes, data inaccuracies, or service interruptions resulting from use of the application.
-</p>
-
-<h2>12. Changes to This Policy</h2>
-<p>
-QuanTix may update this Privacy Policy periodically to reflect changes in functionality, data handling practices, or legal requirements.
-Continued use of the application after updates constitutes acceptance of the revised policy.
-</p>
-
-<h2>13. Contact Information</h2>
-<p>
-For questions regarding this Privacy Policy or data handling practices, contact: <a href="mailto:support@quantix.app">support@quantix.app</a>
-</p>
-
-<div class="footer">
-© 2026 QuanTix. All rights reserved.
+<!-- HERO -->
+<div class="hero">
+  <div class="logo-mark">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+      </svg>
+    </div>
+    <span class="logo-name">QuanTix</span>
+  </div>
+  <h1>Terms &amp; Conditions</h1>
+  <p>Intelligent Wealth Management — User Agreement</p>
+  <span class="hero-badge">Effective: January 1, 2025 &nbsp;·&nbsp; v2.3</span>
 </div>
 
-</div>
+<div class="wrapper">
+
+  <!-- TABLE OF CONTENTS -->
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#s1">Acceptance of Terms</a></li>
+      <li><a href="#s2">Eligibility</a></li>
+      <li><a href="#s3">Account Registration &amp; Security</a></li>
+      <li><a href="#s4">Financial Data &amp; Balances</a></li>
+      <li><a href="#s5">AI-Powered Features</a></li>
+      <li><a href="#s6">Investment Information</a></li>
+      <li><a href="#s7">Privacy &amp; Data Storage</a></li>
+      <li><a href="#s8">Prohibited Conduct</a></li>
+      <li><a href="#s9">Disclaimer of Warranties</a></li>
+      <li><a href="#s10">Limitation of Liability</a></li>
+      <li><a href="#s11">Changes &amp; Contact</a></li>
+    </ol>
+  </nav>
+
+  <!-- SECTIONS -->
+  <div class="section" id="s1">
+    <div class="section-num">01</div>
+    <h2>Acceptance of Terms</h2>
+    <p>By creating an account, checking the acceptance checkbox, or otherwise accessing or using QuanTix ("the Application"), you confirm that you have read, understood, and agree to be bound by these Terms &amp; Conditions and any applicable laws and regulations.</p>
+    <p>If you do not agree to all of these terms, you are not authorized to use QuanTix. Your continued use of the Application after any amendments to these Terms constitutes your acceptance of the updated Terms.</p>
+    <div class="highlight-box">
+      These Terms form a legally binding agreement between you and the QuanTix development team. Please read them carefully before proceeding.
+    </div>
+  </div>
+
+  <div class="section" id="s2">
+    <div class="section-num">02</div>
+    <h2>Eligibility</h2>
+    <p>You must be at least <strong>13 years of age</strong> to use QuanTix. If you are between 13 and 18 years old, you represent that your parent or legal guardian has reviewed and agreed to these Terms on your behalf.</p>
+    <ul>
+      <li>You are a human individual, not a bot or automated service</li>
+      <li>You are not prohibited from using financial management tools under applicable law</li>
+      <li>You have not previously been suspended or removed from the Application</li>
+      <li>You will provide accurate and truthful information during registration</li>
+    </ul>
+  </div>
+
+  <div class="section" id="s3">
+    <div class="section-num">03</div>
+    <h2>Account Registration &amp; Security</h2>
+    <p>To access core features of QuanTix, you must register an account by providing a valid email address, first and last name, and a password. You are responsible for maintaining the confidentiality of your credentials.</p>
+    <ul>
+      <li>You are solely responsible for all activity that occurs under your account</li>
+      <li>You must notify us immediately of any unauthorized use of your account</li>
+      <li>You must not share your password with any third party</li>
+      <li>Accounts are non-transferable</li>
+    </ul>
+    <div class="warning-box">
+      <strong>Important:</strong> QuanTix stores user data including your name, email, balance, and transaction history on external infrastructure (GitHub). While we implement reasonable safeguards, no system is completely secure. Use a unique, strong password.
+    </div>
+    <p>We reserve the right to suspend or terminate accounts that violate these Terms, display suspicious activity, or have been inactive for an extended period without notice.</p>
+  </div>
+
+  <div class="section" id="s4">
+    <div class="section-num">04</div>
+    <h2>Financial Data &amp; Balances</h2>
+    <p>QuanTix allows you to manually record deposit and withdrawal transactions and track a running account balance. This balance is <strong>simulated and informational only</strong> — it does not represent a real bank account, brokerage account, or any regulated financial instrument.</p>
+    <ul>
+      <li>No actual money is transferred, held, or managed by QuanTix</li>
+      <li>Transaction history and balances are stored for record-keeping purposes only</li>
+      <li>You are solely responsible for the accuracy of the data you enter</li>
+      <li>QuanTix is not a payment processor, bank, or money-services business</li>
+    </ul>
+    <p>All financial figures displayed in the Application are derived from data you manually enter. QuanTix does not connect to your real financial institutions or accounts.</p>
+  </div>
+
+  <div class="section" id="s5">
+    <div class="section-num">05</div>
+    <h2>AI-Powered Features</h2>
+    <p>QuanTix incorporates AI-generated insights powered by Google Gemini ("AI Features"). These features analyze your entered transaction data and provide personalized suggestions about budgeting, saving, and spending.</p>
+    <div class="highlight-box">
+      AI responses are generated automatically and may not always be accurate, complete, or appropriate for your specific situation. They are provided for general informational purposes only.
+    </div>
+    <ul>
+      <li>AI insights are not a substitute for professional financial advice</li>
+      <li>We do not guarantee the accuracy or suitability of AI-generated content</li>
+      <li>Your transaction data may be transmitted to third-party AI providers to generate responses</li>
+      <li>AI responses may vary; the same query may produce different results over time</li>
+    </ul>
+    <p>By using AI Features, you consent to your transaction data being processed by third-party AI services (including Google Gemini) solely for the purpose of generating your personalized insights.</p>
+  </div>
+
+  <div class="section" id="s6">
+    <div class="section-num">06</div>
+    <h2>Investment Information</h2>
+    <p>QuanTix displays real-time and historical stock data sourced from Yahoo Finance and other public data providers. The Investment section also provides AI-generated analysis of publicly traded securities.</p>
+    <div class="warning-box">
+      <strong>Not financial advice.</strong> Nothing in the Investment section of QuanTix constitutes financial, investment, tax, or legal advice. Stock data, AI analysis, pros/cons summaries, and all related content are for <strong>educational and informational purposes only</strong>.
+    </div>
+    <ul>
+      <li>Past performance of any security does not guarantee future results</li>
+      <li>Stock prices and daily changes may be delayed or inaccurate</li>
+      <li>You should consult a licensed financial advisor before making investment decisions</li>
+      <li>QuanTix is not a registered investment advisor or broker-dealer</li>
+    </ul>
+    <p>We expressly disclaim all liability for any investment decisions made based on information displayed in QuanTix.</p>
+  </div>
+
+  <div class="section" id="s7">
+    <div class="section-num">07</div>
+    <h2>Privacy &amp; Data Storage</h2>
+    <p>Your account information (name, email, password, balance, and transaction history) is stored in a GitHub repository managed by the QuanTix development team. By using QuanTix, you consent to this storage and processing arrangement.</p>
+    <ul>
+      <li>We collect only the information necessary to operate the Application</li>
+      <li>We do not sell your personal data to third parties</li>
+      <li>Weather data is fetched using approximate geographic coordinates and is not linked to your identity</li>
+      <li>Market news and stock data are fetched from public APIs without transmitting personal information</li>
+    </ul>
+    <p>You may request deletion of your account and associated data at any time by contacting us. We will process deletion requests within a reasonable timeframe.</p>
+    <div class="highlight-box">
+      Passwords are stored as plain text in the current version of QuanTix. We strongly recommend using a password that you do not reuse on other services. We are actively working to improve password security in future versions.
+    </div>
+  </div>
+
+  <div class="section" id="s8">
+    <div class="section-num">08</div>
+    <h2>Prohibited Conduct</h2>
+    <p>You agree that you will not, under any circumstances:</p>
+    <ul>
+      <li>Attempt to access, modify, or corrupt other users' data</li>
+      <li>Reverse-engineer, decompile, or disassemble the Application</li>
+      <li>Use the Application for any unlawful purpose or in violation of any regulations</li>
+      <li>Attempt to gain unauthorized access to our data storage or backend infrastructure</li>
+      <li>Introduce viruses, malware, or any other harmful code into the Application</li>
+      <li>Use the Application to conduct any fraudulent financial activity</li>
+      <li>Impersonate any other user, person, or entity</li>
+      <li>Scrape, mine, or systematically extract data from the Application</li>
+    </ul>
+    <p>Violation of these prohibitions may result in immediate termination of your account and, where applicable, referral to relevant authorities.</p>
+  </div>
+
+  <div class="section" id="s9">
+    <div class="section-num">09</div>
+    <h2>Disclaimer of Warranties</h2>
+    <p>QuanTix is provided <strong>"as is"</strong> and <strong>"as available"</strong> without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+    <ul>
+      <li>We do not warrant that the Application will be uninterrupted, error-free, or secure</li>
+      <li>We do not warrant the accuracy or completeness of any financial data displayed</li>
+      <li>We do not warrant that AI-generated content is accurate, reliable, or appropriate</li>
+      <li>Third-party data sources (Yahoo Finance, Open-Meteo, etc.) are beyond our control</li>
+    </ul>
+    <p>Your use of QuanTix is entirely at your own risk. We are not liable for any losses, damages, or adverse outcomes arising from your use of or reliance on the Application.</p>
+  </div>
+
+  <div class="section" id="s10">
+    <div class="section-num">10</div>
+    <h2>Limitation of Liability</h2>
+    <p>To the fullest extent permitted by applicable law, the QuanTix development team shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:</p>
+    <ul>
+      <li>Loss of profits, data, or goodwill</li>
+      <li>Investment losses or financial decisions based on Application content</li>
+      <li>Unauthorized access to or alteration of your data</li>
+      <li>Any other matter relating to your use of the Application</li>
+    </ul>
+    <p>In no event shall the total liability of the QuanTix development team exceed the amount you have paid (if any) to access the Application in the twelve months preceding the claim.</p>
+  </div>
+
+  <div class="section" id="s11">
+    <div class="section-num">11</div>
+    <h2>Changes &amp; Contact</h2>
+    <p>We reserve the right to modify these Terms &amp; Conditions at any time. Changes will be effective upon posting of the updated Terms. Your continued use of QuanTix after any changes constitutes acceptance of the new Terms.</p>
+    <p>We encourage you to review these Terms periodically. The "Effective" date at the top of this document reflects the most recent revision.</p>
+    <div class="highlight-box">
+      If you have any questions, concerns, or requests regarding these Terms or your data, please reach out through the QuanTix project repository or any official contact channel listed in the Application.
+    </div>
+    <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions.</p>
+  </div>
+
+</div><!-- /wrapper -->
+
+<footer>
+  <p>&copy; 2025 QuanTix — Intelligent Wealth Management &nbsp;·&nbsp; v2.3</p>
+  <p>Last updated: January 1, 2025</p>
+</footer>
+
+<button id="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+
+<script>
+  const btn = document.getElementById('top-btn');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 300);
+  });
+</script>
+
 </body>
 </html>
