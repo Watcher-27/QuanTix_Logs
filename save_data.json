@@ -38,6 +38,14 @@
                     "e transfer"
                 ]
             ]
+        },
+        "test@test.com": {
+            "first_name": "Test",
+            "last_name": "test",
+            "email": "test@test.com",
+            "password": "123",
+            "balance": 0.0,
+            "history": []
         }
     }
 }
