@@ -1,114 +1,12 @@
 {
-        "xioadela2@gmail.com": {
-            "first_name": "xio",
-            "last_name": "mallo",
-            "email": "xioadela2@gmail.com",
+    "users": {
+        "123@123.com": {
+            "first_name": "Edison",
+            "last_name": "Wang",
+            "email": "123@123.com",
             "password": "123",
             "balance": 0.0,
-            "history": [
-                [
-                    "deposit",
-                    822.65,
-                    "Apr 30",
-                    "paycheck"
-                ],
-                [
-                    "withdraw",
-                    12.0,
-                    "Apr 30",
-                    "food"
-                ],
-                [
-                    "withdraw",
-                    40.0,
-                    "Apr 30",
-                    "cloths"
-                ],
-                [
-                    "withdraw",
-                    11.29,
-                    "Apr 30",
-                    "amazon prime"
-                ],
-                [
-                    "deposit",
-                    19.0,
-                    "Apr 30",
-                    "e transfer"
-                ],
-                [
-                    "withdraw",
-                    18.0,
-                    "May 14",
-                    "uber"
-                ],
-                [
-                    "withdraw",
-                    41.26,
-                    "May 14",
-                    "movie tickets"
-                ],
-                [
-                    "withdraw",
-                    30.0,
-                    "May 14",
-                    "uber"
-                ],
-                [
-                    "withdraw",
-                    14.0,
-                    "May 14",
-                    "food"
-                ],
-                [
-                    "withdraw",
-                    6.0,
-                    "May 14",
-                    "food"
-                ],
-                [
-                    "withdraw",
-                    65.0,
-                    "May 14",
-                    "musical tickets"
-                ],
-                [
-                    "withdraw",
-                    18.0,
-                    "May 14",
-                    "uber"
-                ],
-                [
-                    "withdraw",
-                    75.0,
-                    "May 14",
-                    "cloths"
-                ],
-                [
-                    "withdraw",
-                    15.0,
-                    "May 14",
-                    "food"
-                ],
-                [
-                    "withdraw",
-                    11.63,
-                    "May 14",
-                    "temu"
-                ],
-                [
-                    "withdraw",
-                    203.0,
-                    "May 14",
-                    "shoes"
-                ],
-                [
-                    "withdraw",
-                    6.0,
-                    "May 14",
-                    "food"
-                ]
-            ]
+            "history": []
         }
     }
 }
