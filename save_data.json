@@ -2,7 +2,7 @@
     "users": {
         "xio": {
             "password": "xioedi",
-            "balance": 675.1,
+            "balance": 669.1,
             "history": [
                 [
                     "deposit",
@@ -55,6 +55,12 @@
                 [
                     "withdraw",
                     14.0,
+                    "May 14",
+                    "food"
+                ],
+                [
+                    "withdraw",
+                    6.0,
                     "May 14",
                     "food"
                 ]
