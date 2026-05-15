@@ -305,6 +305,14 @@
             "password": "123",
             "balance": 0.0,
             "history": []
+        },
+        "xioadela2@gmail.com": {
+            "first_name": "xio",
+            "last_name": "mallo",
+            "email": "xioadela2@gmail.com",
+            "password": "123",
+            "balance": 0.0,
+            "history": []
         }
     }
 }
