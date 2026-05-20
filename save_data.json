@@ -5,7 +5,7 @@
             "last_name": "Wang",
             "email": "1",
             "password": "123",
-            "balance": 2364.3799999999997,
+            "balance": 2264.3799999999997,
             "history": [
                 [
                     "deposit",
@@ -66,6 +66,12 @@
                     30.23,
                     "May 20",
                     "gift"
+                ],
+                [
+                    "withdraw",
+                    100.0,
+                    "May 20",
+                    "insurace"
                 ]
             ]
         },
