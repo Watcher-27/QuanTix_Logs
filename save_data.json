@@ -46,6 +46,14 @@
             "password": "123",
             "balance": 0.0,
             "history": []
+        },
+        "edisonwang2008@hotmail.com": {
+            "first_name": "123",
+            "last_name": "123",
+            "email": "edisonwang2008@hotmail.com",
+            "password": "123",
+            "balance": 0.0,
+            "history": []
         }
     }
 }
