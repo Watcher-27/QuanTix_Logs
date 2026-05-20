@@ -1,8 +1,11 @@
 {
     "users": {
-        "xio": {
-            "password": "xioedi",
-            "balance": 778.36,
+        "123@123.com": {
+            "first_name": "Edison",
+            "last_name": "Wang",
+            "email": "123@123.com",
+            "password": "123",
+            "balance": 778.3600000000001,
             "history": [
                 [
                     "deposit",
@@ -36,192 +39,10 @@
                 ]
             ]
         },
-        "123": {
-            "password": "123",
-            "balance": 2700.5800000000004,
-            "history": [
-                [
-                    "deposit",
-                    1092.0,
-                    "Apr 30",
-                    "paycheck"
-                ],
-                [
-                    "withdraw",
-                    150.0,
-                    "Apr 30",
-                    "investment"
-                ],
-                [
-                    "withdraw",
-                    13.0,
-                    "Apr 30",
-                    "food"
-                ],
-                [
-                    "withdraw",
-                    25.43,
-                    "Apr 30",
-                    "valorant skin"
-                ],
-                [
-                    "withdraw",
-                    23.93,
-                    "Apr 30",
-                    "dinner"
-                ],
-                [
-                    "withdraw",
-                    123.24,
-                    "Apr 30",
-                    "helment"
-                ],
-                [
-                    "withdraw",
-                    17.23,
-                    "Apr 30",
-                    "uber"
-                ],
-                [
-                    "deposit",
-                    892.32,
-                    "May 11",
-                    "bonus"
-                ],
-                [
-                    "withdraw",
-                    150.0,
-                    "May 12",
-                    "investment"
-                ],
-                [
-                    "withdraw",
-                    28.32,
-                    "May 13",
-                    "food"
-                ],
-                [
-                    "withdraw",
-                    8.23,
-                    "May 13",
-                    "coffee"
-                ],
-                [
-                    "withdraw",
-                    829.98,
-                    "May 13",
-                    "prom  suit"
-                ],
-                [
-                    "withdraw",
-                    53.43,
-                    "May 13",
-                    "dinner"
-                ],
-                [
-                    "withdraw",
-                    20.32,
-                    "May 13",
-                    "bar drinks"
-                ],
-                [
-                    "withdraw",
-                    34.23,
-                    "May 13",
-                    "uber"
-                ],
-                [
-                    "withdraw",
-                    12.93,
-                    "May 13",
-                    "water"
-                ],
-                [
-                    "withdraw",
-                    15.34,
-                    "May 13",
-                    "snacks"
-                ],
-                [
-                    "withdraw",
-                    1.13,
-                    "May 13",
-                    "ring pop"
-                ],
-                [
-                    "deposit",
-                    500.0,
-                    "May 13",
-                    "from mom"
-                ],
-                [
-                    "deposit",
-                    123.0,
-                    "May 14",
-                    "reason"
-                ],
-                [
-                    "withdraw",
-                    400.0,
-                    "May 14",
-                    "prom suit "
-                ],
-                [
-                    "deposit",
-                    2000.0,
-                    "May 14",
-                    "monthly paycheck "
-                ]
-            ]
-        },
-        "pesp": {
-            "password": "1234",
-            "balance": 4600.0,
-            "history": [
-                [
-                    "deposit",
-                    1000.0,
-                    "May 07",
-                    "job"
-                ],
-                [
-                    "withdraw",
-                    400.0,
-                    "May 07",
-                    "food"
-                ],
-                [
-                    "deposit",
-                    4000.0,
-                    "May 07",
-                    "income"
-                ]
-            ]
-        },
-        "iram": {
-            "password": "1234",
-            "balance": 4300.0,
-            "history": [
-                [
-                    "deposit",
-                    5000.0,
-                    "May 08",
-                    "work"
-                ],
-                [
-                    "withdraw",
-                    700.0,
-                    "May 08",
-                    "food"
-                ]
-            ]
-        },
-        "ewang": {
-            "password": "1234",
-            "balance": 0.0,
-            "history": []
-        },
-        "edison": {
+        "test@test.com": {
+            "first_name": "Test",
+            "last_name": "test",
+            "email": "test@test.com",
             "password": "123",
             "balance": 0.0,
             "history": []
