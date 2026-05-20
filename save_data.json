@@ -5,7 +5,7 @@
             "last_name": "Wang",
             "email": "1",
             "password": "123",
-            "balance": 778.3600000000001,
+            "balance": 4018.08,
             "history": [
                 [
                     "deposit",
@@ -36,6 +36,12 @@
                     19.0,
                     "Apr 30",
                     "e transfer"
+                ],
+                [
+                    "deposit",
+                    3239.72,
+                    "May 20",
+                    "paycheck"
                 ]
             ]
         },
